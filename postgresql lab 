@@ -1,0 +1,21 @@
+alex pham postgresql
+
+1.select * from customers;
+2.select country from customers;
+3.select * from  customers where customerid like 'BL%';
+4.select * from orders limit 100;
+5.select * from customers where postalcode = '3012' or postalcode='1010' or postalcode ='12209' or postalcode = '05023';
+6.select * from orders where shipRegion is not null;
+7. select * from customers order by country, city;
+8.insert into customers (customerid, companyname, contactname,contacttitle, address,city,region,postalcode,country, phone, fax)
+
+values ('SSTFO', 'compnay', 'alex', 'ddddd','45 detroit','detrot','re','34545','US','313-678-8976','313-677-7890');
+9.update orders set ShipRegion = 'EuroZone' where shipcountry = 'france';
+10.delete from order_details where quantity = 1;
+11.select avg (quantity) from order details;
+select max (quantity) from order details;
+select min (quantity) from order details;
+12.select avg (quantity) from order_details group by orderid;
+select max (quantity) from order_details group by orderid;
+select min (quantity) from order_details group by orderid;
+13. select * from orders; 
